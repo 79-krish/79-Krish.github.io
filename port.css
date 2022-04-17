@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Ubuntu+Mono:ital@1&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    text-transform: capitalize;
+    outline: none; border: none;
+    transition: all 2s linear;
+}
+*::selection
+{
+    background: var(--yellow);
+    color: rgb(68, 60, 60);
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar
+{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-thumb
+{
+    background-color: rgb(62, 56, 56);
+}
+html::webkit ::-webkit-scrollbar-track
+{
+    background: var(--yellow);
+}
+body{
+    background: rgb(117, 23, 23);
+    overflow-y: hidden;
+    padding-left: 35rem;
+}
+header
+{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: rgb(33, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img
+{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid yellow;
+}
+header .user.name
+{
+ color: white;
+ font-size: 80px;
+}
+header .user.post
+{
+    font-size: 3.5rem;
+    color: white;
+}
+header .navbar
+{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+
+}
+header .navbar ul li a{
+    border-radius:5rem;
+    display: block;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgb(11, 11, 11);
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+}
+header .navbar ul li a:hover
+{
+    border-radius: 1px solid rgb(120, 120, 37);
+    background: yellowgreen;
+
+}
+section{
+    min-height: 100vh;
+    background-color: black;
+    padding: 1rem;
+}
+#menu
+{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: rgb(38, 37, 37);
+    cursor: pointer;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home
+{
+    display: flex;
+    padding: 0 15rem;
+    justify-content: center;
+    flex-flow: column;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: white;
+
+}
+.home h1{
+    font-size: 5rem;
+    color: white;
+}
+.home p{
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.heading
+{
+    text-align: center;
+    color: white;
+    margin: 0 6rem;
+    padding: 1rem;
+    font-size: 4rem;
+    border-bottom: .1rem solid grey;
+}
+.heading span{
+    color:rgb(187, 117, 25);
+}
+.bt
+{
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: rgb(187, 117, 25);
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 25px;
+}
+.bt i{
+    padding: 0 3rem;
+    font-size: 23px;
+}
+.home h1 span
+{
+    color:rgb(187, 117, 25);
+}
+.bt:hover
+{
+    background-color: rgb(85, 77, 77);
+}
+section .row
+{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 4rem;
+    text-align: center;
+    color: aliceblue;
+}
+section .counter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1 1 48rem;
+    color: rgb(241, 233, 233);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+section .box-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    padding-left: 3rem;
+
+}
+section .box-container .box
+{
+    position: relative;
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid white;
+
+}
+section .box-container .box span{
+    font-size: 1.3rem;
+    background: rgb(42, 35, 35);
+    color: white;
+    padding: .5rem 2.5rem;
+    border-radius: 5rem;
+}
+
+section .box-container .box h3{
+    color: white;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    font-weight: normal;
+}
+section .box-container .box p{
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+}
+
+section .box-container .box i{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top:-1.5rem;
+    left: -2.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    background: rgb(189, 189, 65);
+    line-height: 5rem;
+    text-align: center;
+}
+.portfolio .box-container .box img
+{
+ object-fit: cover;
+ cursor: pointer;
+ width: 100%;
+ height: 100%;
+}
+.portfolio .box-container .box:hover img
+{
+    transform: scale(1.2);
+}
+.contact .row{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .row .content
+{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form
+{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box
+{
+    padding: 1.5rem;
+    background: rgb(29, 25, 25);
+    margin: 1rem 0;
+    color: white;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+
+}
+.contact .row form .box::placeholder
+{
+    text-transform: capitalize;
+}
+.contact .row form .message
+{
+    height: 15rem;
+    resize: none;
+
+}
+.contact .row .content .tittle
+{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3
+{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i
+{
+    padding-right: 1rem;
+    color:  rgb(189, 189, 65);
+}
+
+footer
+{
+    background: rgb(83, 71, 71);
+}
+footer .row{
+    padding-top: 2px;
+}
+footer .col  a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding-left: 10%;
+    padding-top: 2px;
+}
+footer .col h3{
+    padding-left: 10%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+html
+{
+    font-size: 62.5%;
+   
+}
+.home{
+    padding: 1rem 4rem;
+}
+
+}
+@media(max-width:991px)
+{
+    header
+    {
+        left: -120%;
+    }
+    #menu
+    {
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+ body {
+     padding: 0;
+ }
+}
+@media(max-width:768px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+    section.row{
+        width:100%;
+    }
+    section .box-container .box{
+        width: 100%;
+    }
+    .contact .row form
+    {
+        margin: 3rem 0;
+    }
+
+}
+    
+    
